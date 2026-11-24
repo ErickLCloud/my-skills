@@ -1,0 +1,61 @@
+{
+  "name": "my-skills",
+  "owner": {
+    "name": "ErickLCloud"
+  },
+  "metadata": {
+    "description": "Personal Claude skills, one plugin per skill"
+  },
+  "plugins": [
+    {
+      "name": "sharpen",
+      "description": "把使用者含糊或跨階段的請求，推敲成一份「工作簡報」（目標、範圍、原始素材、做法、驗收、階段、playbook），經使用者確認後才開工。",
+      "version": "10.0.0",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/sharpen"
+      ]
+    },
+    {
+      "name": "multi-work",
+      "description": "多工/分工工作模式。當使用者說 \"multi work\"、\"multi-work\"、\"多工模式\"、\"分工\"、\"開多個 session\"、\"拆給多個 worker\"，或分工已經在進行中想「中途套用」規則時使用。",
+      "version": "15.0.0",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/multi-work"
+      ]
+    },
+    {
+      "name": "revision-retro",
+      "description": "檢討某份文件／報告／簡報／表格為什麼來回改了這麼多版：先查 _vN 版本檔、對話紀錄與追蹤檔，把每一版的修改原因分類，找出 v1 前就能避免的模式，只問證據補不上的缺口，產出檢討報告和建議規則。",
+      "version": "3.0.0",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/revision-retro"
+      ]
+    },
+    {
+      "name": "pptx-report-style",
+      "description": "製作 PowerPoint 工程報告（8D、FACA、測試計畫、proposal、schedule review）時，套用像人寫的工程報告版面與用詞，避免「太 AI」的排版與文句。",
+      "version": "3.0.0",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/pptx-report-style"
+      ]
+    },
+    {
+      "name": "project-init",
+      "description": "Scaffolds the standard project-workspace layout into a connected folder, or refreshes the managed instruction block in an existing workspace's claude.md.",
+      "version": "5.0.0",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/project-init"
+      ]
+    }
+  ]
+}
