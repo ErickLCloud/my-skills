@@ -10,7 +10,7 @@
     {
       "name": "sharpen",
       "description": "把使用者含糊或跨階段的請求，推敲成一份「工作簡報」（目標、範圍、原始素材、做法、驗收、階段、playbook），經使用者確認後才開工。",
-      "version": "10.0.0",
+      "version": "11.0.0",
       "source": "./",
       "strict": false,
       "skills": [
